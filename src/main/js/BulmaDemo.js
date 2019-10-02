@@ -25,11 +25,7 @@ import Pagination from "./bulma/Pagination";
 import Panel from "./bulma/Panel";
 import Tabs from "./bulma/Tabs";
 
-type Props = {
-  classes: any
-};
-
-export default class DemoPage extends React.Component<Props> {
+export default class BulmaDemo extends React.Component<> {
   render() {
     return (
       <>
