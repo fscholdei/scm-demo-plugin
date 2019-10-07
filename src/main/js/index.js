@@ -1,17 +1,21 @@
 // @flow
 import React from "react";
-import { Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { binder } from "@scm-manager/ui-extensions";
 import DemoNavLink from "./DemoNavLink";
 import BulmaDemo from "./BulmaDemo";
+import Styleguide from "./Styleguide";
 import Sandbox from "./Sandbox";
+import DemoPage from "./DemoPage";
 
 const DemoRoute = () => {
   return (
-    <>
+    <Switch>
       <Route path="/admin/demo/bulma" render={() => <BulmaDemo />} />
+      <Route path="/admin/demo/styleguide" render={() => <Styleguide />} />
       <Route path="/admin/demo/sandbox" render={() => <Sandbox />} />
-    </>
+      <Route path="/admin/demo/" render={() => <DemoPage />} />
+    </Switch>
   );
 };
 
