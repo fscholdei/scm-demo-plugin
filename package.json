@@ -17,6 +17,6 @@
   "devDependencies": {
     "@scm-manager/ui-bundler": "^0.0.27",
     "jest": "^23.6.0",
-    "node-fetch": "^2.3.0"
+    "node-fetch": "^2.6.1"
   }
 }
